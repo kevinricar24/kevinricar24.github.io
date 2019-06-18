@@ -1542,14 +1542,14 @@ html:not(.mobile) .slide.video .background[style] {
   display: none;
 }
 
-.videoThumbnail {
+.videoThumbnail, .novideoThumbnail{
   cursor: pointer;
   position: relative;
   font-size: 0;
   overflow: hidden;
   line-height: 0;
 }
-.videoThumbnail.rounded {
+.videoThumbnail.rounded, .novideoThumbnail.rounded {
   border-radius: 6px;
 }
 .videoThumbnail:before {
@@ -1563,22 +1563,33 @@ html:not(.mobile) .slide.video .background[style] {
   background-position: center center;
   transition: 0.5s;
 }
-.videoThumbnail:not(.noTint):hover:after {
+.novideoThumbnail:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  transition: 0.5s;
+}
+
+.videoThumbnail:not(.noTint):hover:after, .novideoThumbnail:not(.noTint):hover:after {
   background-color: rgba(0, 0, 0, 0.15);
 }
-.videoThumbnail:hover:before {
+.videoThumbnail:hover:before, .novideoThumbnail:hover:before {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   transition: 0.25s;
 }
-.videoThumbnail:active:before {
+.videoThumbnail:active:before, .novideoThumbnail:active:before {
   opacity: 0.8;
 }
-.videoThumbnail.small {
+.videoThumbnail.small, .novideoThumbnail.small {
   max-width: 200px;
   display: block;
 }
-.videoThumbnail.small:before {
+.videoThumbnail.small:before, .novideoThumbnail.small:before {
   background-size: 44px;
 }
 
