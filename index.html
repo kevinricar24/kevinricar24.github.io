@@ -724,8 +724,8 @@
   <script src="scripts/main.js"></script>
 </body>
 <script>
-  function datesCalc(dateL){
-    var today = new Date(dateL);
+  function datesCalc(){
+    var today = new Date();
     var currentYear = today.getFullYear(); 
     var currentMonth = today.getMonth() + 1;
     var currentDay = today.getDate();
@@ -737,7 +737,6 @@
     }
     document.getElementById("showage").innerText = age;
   }
-  var pol = "06/05/2019";
-  datesCalc(pol);
+  datesCalc();
 </script>
 </html>
