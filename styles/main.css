@@ -3406,6 +3406,10 @@ body {
   background-color: #a68153 !important;
 }
 
+.bg-primary-white {
+  background-color: #FFF !important;
+}
+
 .bg-info {
   background-color: #2CA8FF !important;
 }
@@ -7164,6 +7168,14 @@ Created using IcoMoon - icomoon.io
   padding-right: 0;
   text-align: center;
   color: #fff;
+  text-transform: uppercase;
+}
+
+.cc-experience .cc-experience-header-brown {
+  padding-top: 60px;
+  padding-right: 0;
+  text-align: center;
+  color: #a68153;
   text-transform: uppercase;
 }
 
