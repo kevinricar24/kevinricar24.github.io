@@ -99,7 +99,7 @@
                 <div class="card-body">
                   <div class="h4 mt-0 title">About</div>
                   <p>Hello! I am Kevin Ricardo Sejin. Software Developer, Traveler and Football Soccer Lover.</p>
-                  <p>Full Stack .NET Developer with strong experience (+7 years) working with multiple technologies in
+                  <p>Full Stack .NET Developer with strong experience (+<label id="showExpYear">7</label> years) working with multiple technologies in
                     Back end and Front End development</p>
                   <p>Avanet Foundation Member and Co-organizer of MDE.NET Community, Constantly researching and
                     learning.</p>
@@ -947,14 +947,14 @@
     var currentMonth = today.getMonth() + 1;
     var currentDay = today.getDate();
     var age = currentYear - 1991;
-    var expYear = currentYear - 2013;
+    var expYear = currentYear - 2012;
     if (currentMonth <= 2) {
       if (currentDay <= 5) {
         age = age - 1;
       }
     }
     document.getElementById("showage").innerText = age;
-    //document.getElementById("showExpYear").innerText = expYear;
+    document.getElementById("showExpYear").innerText = expYear;
   }
   datesCalc();
 </script>
